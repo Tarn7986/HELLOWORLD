@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: darkblue;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding:20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 60%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  color: darkblue;
+}
+
+p {
+  color: #333;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label, input, select, textarea {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid Grey;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip::before {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background: darkblue;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
+<body>
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>Contact Us</h1>
+    <p>Swing by for a Bar Of Chocolate, or leave us a message:</p>
+  </div>
+  <div class="column">
+    <form>
+      <label for="fname" class="tooltip" title="Enter your first name">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <style>
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a.active {
+  font-weight: bold;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#element1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#element2 {
+  text-align: center;
+  margin-top: 20px;
+}
+button {
+  background-color: deepskyblue;
+  color: white;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+    </style>
+<body>
+  <div class="logo">
+  <img src="choc-26.webp" alt="Trulli" width="140" height="66">
+  </div>
+<header>
+<ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="SignIn.html">Order Here</a></li>
+  <li><a href="ContactUs.html">Contact</a></li>
+  <li><a href="AboutUs.html">About</a></li>
+</ul>
+</header>
+<h1>
+  Order Right Now
+</h1>
+    <h2>
+      Dairy Milk Silk Bubbly
+    </h2><br><br><br>
+<div id="element1">
+ <img src="Bubbly2.webp"width="456" height="246" style="margin-right : 120px;";>
+</div>
+<div id="element2">
+  <h1>About this item</h1>
+    <p>Perfect for sharing with friends and family
+Milk chocolate Glass and a half of full cream milk in every half pound
+Suitable for vegetarians</p>
+<h3>12 x 45g bars</h3>
+  <h3>$16.77</h3>
+ <button onclick="openSignInPage()" style="background-color: deepskyblue; color: white; font-size: 16px; border: none; text-align: centre; margin-left: 590px;">Click To Order</button><br><br><br>
+
+    <script>
+        function openSignInPage() {
+            window.open('ContactUs .html', "_blank");
+        }
+    </script>
+</div>
+</div>
+  <footer>
+        <p>&copy; 2023 Responsive Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
